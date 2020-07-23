@@ -1,0 +1,142 @@
+
+.common-list{
+	padding: 20upx 0 10upx 0;
+	display: flex;
+	.common-list-l{
+		width: 120upx;
+		text-align: center;
+		image{
+			width: 90upx;
+			height: 90upx;
+			border-radius: 50%;
+		}
+	}
+	.common-list-r{
+		flex: 1;
+		padding-right: 10upx;
+	}
+}
+.common-list-title{
+	display: flex;
+	.common-list-title-txt{
+		flex:1;
+		display: flex;
+		align-items: center;
+		&:nth-child(1){
+			line-height: 80upx;
+			font-size: $uni-font-size-lg;
+		}
+		
+	}
+	.common-list-title-r{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		.follow-btn{
+			height: 50upx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-left: 5upx;
+			padding-right: 10upx;
+			border-radius: 5upx;
+			background-color: #f0f0f0;
+		}
+		.item-close{
+			padding: 0 15upx;
+			color: $uni-text-color-grey;
+		}
+	}
+}
+.common-list-content{
+	padding: 10upx 10upx 10upx 0;
+	.content-txt{
+		font-size: $uni-font-size-lg;
+		margin-bottom: 5upx;
+	}
+	.content-src{
+		position: relative;
+		image{
+			width: 100%;
+			height: 300upx;
+			border-radius: 10upx;
+		}
+	}
+	.content-src-video{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.iconplay{
+			color: white;
+			font-size: 120upx;
+		}
+		.content-src-video-info{
+			font-size: 24upx;
+			position: absolute;
+			right: 10upx;
+			bottom: 20upx;
+			color: #dcdcdc;
+			display: inline-block;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 10upx;
+			padding: 0 10upx;
+		}
+	}
+	
+	.common-list-content-share{
+		background-color: $uni-bg-color-grey;
+		display: flex;
+		border-radius: 20upx;
+		.content-share-image{
+			padding: 10upx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			image{
+				width: 200upx;
+				height: 120upx;
+				border-radius: 20upx;
+			}
+		}
+		.content-share-text{
+			flex: 1;
+			line-height: 40upx;
+			padding-right: 10upx;
+			font-size: $uni-font-size-lg;
+			display: flex;
+			align-items: center;
+		}
+		
+	}
+}
+.common-list-footer{
+		color: #808080;
+		padding-left: 20upx;
+		padding-right: 20upx;
+		display: flex;
+		border-bottom: 1upx solid #F0F0F0;
+	}
+	.common-list-footer>view{
+		flex: 1;
+	}
+	.common-list-footer-right{
+		text-align: right;
+		white-space:nowrap;
+	}
+	.common-list-footer-btn{
+		display: inline-block;
+		margin: 0 8upx;
+		.iconfont{
+			font-size: $uni-font-size-big;
+		}
+		.common-list-footer-btn-num{
+			font-size: $uni-font-size-lg;
+			margin-left: 2upx;
+		}
+	}
