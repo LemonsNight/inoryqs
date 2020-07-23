@@ -1,0 +1,341 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": {
+						"backgroundColor": "#FFFFFF",
+						// 搜索框
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#f7f7f7",
+							"borderRadius": "5px",
+							"placeholder": "搜索趣事",
+							"placeholderColor": "#cccccc",
+							"disabled": true
+						},
+						// 按钮
+						"buttons": [{
+								"color": "#F0AD4E",
+								"float": "left",
+								"fontSize": "24px",
+								"colorPressed": "#cccccc",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue606"
+							},
+							{
+								"color": "#333333",
+								"float": "right",
+								"fontSize": "24px",
+								"colorPressed": "#cccccc",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue63c"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/paper/paper",
+			"style": {
+				"navigationBarTitleText": "小纸条",
+				"enablePullDownRefresh":true,
+				"app-plus":{
+					"titleNView":{
+						"buttons": [{
+						"color": "#000000",
+						"float": "left",
+						"fontSize": "24px",
+						"colorPressed": "#cccccc",
+						"fontSrc": "/static/font/iconfont.ttf",
+						"text": "\ue6b4"
+					},
+					{
+						"color": "#000000",
+						"float": "right",
+						"fontSize": "24px",
+						"colorPressed": "#cccccc",
+						"fontSrc": "/static/font/iconfont.ttf",
+						"text": "\ue623"
+					}
+				]
+					}
+					
+				}
+				
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+				
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none", // 关闭反弹效果
+					"scrollIndicator": "none", // 隐藏滚动条
+					"titleNView": {
+						"autoBackButton": false, // 不现实左边的返回按钮
+						"backgroundColor": "#FFFFFF",
+						// 搜索框
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#f7f7f7",
+							"borderRadius": "5px",
+							"placeholder": "搜索趣事",
+							"placeholderColor": "#cccccc",
+							"autoFocus": true
+						},
+						// 按钮
+						"buttons": [{
+							"width": "60px",
+							"color": "#303030",
+							"float": "right",
+							"fontSize": "16px",
+							"colorPressed": "#cccccc",
+							"text": "取消"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/add-input/add-input",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/news/topic-classify/topic-classify",
+			"style": {
+				"navigationBarTitleText": "话题分类"
+			}
+		}, {
+			"path": "pages/news/topic-detail/topic-detail",
+			"style": {
+				"navigationBarTitleText": "话题详情",
+				"enablePullDownRefresh":true,
+				"app-plus": {
+					"scrollIndicator":"none",
+					"titleNView":{
+						"type":"transparent",
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+						
+					}
+				}
+				
+			}
+		}
+        ,{
+            "path" : "pages/user-list/user-list",
+            "style": {
+            	"navigationBarTitleText": "用户列表",
+							
+            	"app-plus": {
+								"animationType":"slide-in-left",
+            		"bounce": "none", // 关闭反弹效果
+            		"scrollIndicator": "none", // 隐藏滚动条
+            		"titleNView": {
+            			"autoBackButton": false, // 不现实左边的返回按钮
+            			"backgroundColor": "#FFFFFF",
+            			// 搜索框
+            			"searchInput": {
+            				"align": "center",
+            				"backgroundColor": "#f7f7f7",
+            				"borderRadius": "5px",
+            				"placeholder": "搜索用户",
+            				"placeholderColor": "#cccccc"
+            				// "autoFocus": true
+            			},
+            			// 按钮
+            			"buttons": [{
+            				"width": "60px",
+            				"color": "#303030",
+            				"float": "right",
+            				"fontSize": "16px",
+            				"colorPressed": "#cccccc",
+            				"text": "取消"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user-chat/user-chat",
+            "style": {
+            	"navigationBarTitleText": "聊天页",
+            	"app-plus":{
+            		"titleNView":{
+            			"buttons": [
+										{
+											"color": "#000000",
+											"float": "right",
+											"fontSize": "24px",
+											"colorPressed": "#cccccc",
+											"fontSrc": "/static/font/iconfont.ttf",
+											"text": "\ue765"
+										}
+								]
+            	}
+            }
+          }
+        }
+        ,{
+            "path" : "pages/index/detail/detail",
+            "style" : {
+							"navigationBarTitleText":"内容页",
+							"app-plus":{
+								"titleNView":{
+									"buttons":[{
+										"type": "menu"
+									}]
+								}
+							}
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/setting",
+            "style" : {
+							"navigationBarTitleText":"设置"
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/change-password/change-password",
+            "style" : {
+							"navigationBarTitleText":"修改密码"
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/change-email/change-email",
+            "style" : {
+							"navigationBarTitleText": "修改邮箱"
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/edit-userinfo/edit-userinfo",
+            "style" : {
+							"navigationBarTitleText":"编辑资料"
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/feedback/feedback",
+            "style" : {
+							"navigationBarTitleText":"意见反馈"
+						}
+        }
+        ,{
+            "path" : "pages/home/setting/about/about",
+            "style" : {
+							"navigationBarTitleText":"关于趣事"
+						}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+							"navigationBarTitleText":"登陆趣事",
+							"navigationBarBackgroundColor":"#FFDA26",
+							"app-plus":{
+								"titleNView": false
+							}
+						}
+        }
+        ,{
+            "path" : "pages/user-space/user-space",
+            "style": {
+            	"navigationBarTitleText": "",
+            	"enablePullDownRefresh":true,
+            	"app-plus": {
+            		"scrollIndicator":"none",
+            		"titleNView":{
+            			"type":"transparent",
+            			"buttons":[
+            				{
+            					"type":"menu"
+            				}
+            			]
+            			
+            		}
+            	}
+            	
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "糗事百科",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#adadad",
+		"selectedColor": "#fee42a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/index-off.png",
+				"selectedIconPath": "static/image/index-on.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/news/news",
+				"iconPath": "static/image/news-off.png",
+				"selectedIconPath": "static/image/news-on.png",
+				"text": "动态"
+			}, {
+				"pagePath": "pages/paper/paper",
+				"iconPath": "static/image/paper-off.png",
+				"selectedIconPath": "static/image/paper-on.png",
+				"text": "小纸条"
+			}, {
+				"pagePath": "pages/home/home",
+				"iconPath": "static/image/home-off.png",
+				"selectedIconPath": "static/image/home-on.png",
+				"text": "我的"
+			}
+
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
